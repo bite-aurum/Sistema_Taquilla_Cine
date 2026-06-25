@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Taquilla_Cine
 {
-    internal class BoletoGeneral : Boleto
+    public class BoletoGeneral : Boleto
     {
         public BoletoGeneral(decimal precioBase) : base(precioBase)
         {

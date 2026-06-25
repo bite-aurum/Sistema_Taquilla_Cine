@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Taquilla_Cine
 {
-    internal class BoletoEstudiante : Boleto
+    public class BoletoEstudiante : Boleto
     {
         public string Matricula { get; set; }
 

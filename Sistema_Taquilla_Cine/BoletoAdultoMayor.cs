@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Sistema_Taquilla_Cine
 {
-    internal class BoletoAdultoMayor
+    public class BoletoAdultoMayor : Boleto
     {
+        public string NumeroInapam { get; set; }
+
+        public BoletoAdultoMayor(decimal precioBase, string numeroInapam) : base(precioBase)
+        {
+            NumeroInapam = numeroInapam;
+        }
+
+        public override decimal CalcularPrecioFinal()
+        {
+            return PrecioBase * 0.50m;
+        }
     }
 }
